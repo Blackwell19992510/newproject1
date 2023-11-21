@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
+    public $table = "book";
     use HasFactory;
      /**
      * The attributes that are mass assignable.
@@ -20,6 +21,6 @@ class Book extends Model
         'author',
         'category',
         'publisher',
-        'yearOfPublication'
+        'yearofpublication'
     ];
 }

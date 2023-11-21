@@ -18,7 +18,7 @@ class BookController extends Controller
              'author'=>'required',
              'category'=>'required',
              'publisher'=>'required',
-             'yearofpublication'=>'required',
+             'yearofpublication'=>'required'
          ]); 
 
     /**
@@ -31,7 +31,7 @@ class BookController extends Controller
          'author'=>$request->author,
          'category'=>$request->category,
          'publisher'=>$request->publisher,
-         'yearofpublicaton'=>$request->yearofpublication,
+         'yearofpublicaton'=>$request->yearofpublication
          
     ]);
 

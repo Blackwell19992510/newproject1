@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('author');
             $table->string('category');
             $table->string('publisher');
-            $table->integer('yearofpublication');
+            $table->integer('yearofpublication')->nullable();
             $table->timestamps();
         });
     }
