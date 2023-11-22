@@ -20,8 +20,13 @@ return new class extends Migration
             $table->string('category');
             $table->string('publisher');
             $table->integer('yearofpublication')->nullable();
+            $table->unsignedBigInteger('users_id');
             $table->timestamps();
+
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
         });
+
+        
     }
 
     /**
