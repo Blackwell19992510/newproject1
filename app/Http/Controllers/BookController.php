@@ -8,6 +8,10 @@ use App\Models\Book;
 
 class BookController extends Controller
 {
+
+    public function index(){
+        return view('book');
+    }
     //Create new Book
     function createBook(Request $request){
         // validate inputs
